@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+}
+
+p {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 12%);
+  padding: 3.4rem;
+  border-radius: 11px;
+  text-align: center;
+  width: 22%;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.img-box {
+  width: 35%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+.img {
+  width: 100%;
+}
+
+.primary-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.profile-location {
+  font-size: 1.1rem;
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+}
+
+.text {
+  margin-top: 2.2rem;
+  margin-bottom: 1.8rem;
+  color: hsl(0, 0%, 100%, 0.8);
+  font-size: 1.2rem;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: block;
+  padding: 1.2rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .primary-header {
+    font-size: 2.2rem;
+  }
+
+  .profile-location {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+  }
+}
